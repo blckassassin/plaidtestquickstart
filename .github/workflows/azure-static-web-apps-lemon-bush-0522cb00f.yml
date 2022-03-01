@@ -31,13 +31,7 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-        env:
-          PLAID_CLIENT_ID: 621457009cc120001ae152e9
-          PLAID_SECRET: 307cb7e1d8ebb42a14e56575f387bb
-          PLAID_ENV: sandbox
-          PLAID_PRODUCTS: auth,transactions
-          PLAID_COUNTRY_CODES: US,CA
-          PLAID_REDIRECT_URI: ''
+
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
