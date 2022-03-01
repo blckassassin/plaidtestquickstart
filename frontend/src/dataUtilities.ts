@@ -8,7 +8,6 @@ import {
   InstitutionsGetByIdResponse,
   LiabilitiesGetResponse,
   PaymentInitiationPaymentGetResponse,
-  AssetReportGetResponse,
   AssetReport,
   TransferGetResponse,
 } from "plaid/dist/api";
