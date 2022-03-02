@@ -10,6 +10,7 @@
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "classnames": "^2.2.6",
+    "express": "^4.17.3",
     "immer": "^9.0.6",
     "plaid": "^9.2.0",
     "plaid-threads": "^11.2.3",
@@ -22,8 +23,10 @@
     "sass-loader": "^10.1.1",
     "typescript": "^4.0.3",
     "web-vitals": "^0.2.4"
-  }, 
+  },
+  "proxy": "http://localhost:8000",
   "scripts": {
+    "prod-start": "node index.tsx",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

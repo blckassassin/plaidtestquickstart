@@ -1,11 +1,11 @@
-const proxy = require("http-proxy-middleware");
+// const proxy = require("http-proxy-middleware");
 
-module.exports = app => {
-  app.use(
-    "/api",
-    proxy({      
-      target: process.env.REACT_APP_API_HOST || "https://myplaidback.azurewebsites.net:8000",
-      changeOrigin: true
-    })
-  );
-};
+// module.exports = app => {
+//   app.use(
+//     "/api",
+//     proxy({      
+//       target: "http://localhost:8000" || "https://myplaidback.azurewebsites.net:8000",
+//       changeOrigin: true
+//     })
+//   );
+// };
